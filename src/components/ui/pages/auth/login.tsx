@@ -16,12 +16,12 @@ const Login = () => {
     const form = useForm();
   return (
     <Form {...form}>
-      <form  className="space-y-8">
+      <form  className="space-y-3 w-64">
         <FormField
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem>
+            <FormItem >
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input placeholder="Enter your email" {...field} />
@@ -43,7 +43,10 @@ const Login = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <div className="flex justify-end">
+
+        <Button type="submit" variant="secondary" className="text-white">Submit</Button>
+        </div>
       </form>
     </Form>
   )

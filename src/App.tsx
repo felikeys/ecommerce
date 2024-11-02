@@ -1,13 +1,11 @@
-import { Button } from '@/components/ui/button'
+import { AuthLayout } from "@/routes/portal";
 
 function App() {
   return (
     <>
-       <div>
-      <Button>Click me</Button>
-    </div>
+      <AuthLayout />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

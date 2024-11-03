@@ -1,5 +1,5 @@
 import { LoginImage } from "@/assets/images";
-import Login from "@/components/ui/pages/login";
+import Login from "@/components/pages/login/index";
 
 const AuthLayout = () => {
   return (

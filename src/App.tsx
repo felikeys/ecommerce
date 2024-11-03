@@ -1,9 +1,10 @@
-import { AuthLayout } from "@/routes/portal";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./portal/routes";
 
 function App() {
   return (
     <>
-      <AuthLayout />
+      <RouterProvider router={router} />
     </>
   );
 }
